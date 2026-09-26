@@ -270,7 +270,7 @@ module.exports = {
   config: {
     name: "yt",
     aliases: ["youtube", "ytb"],
-    version: "7.0",
+    version: "2.0",
     author: "Mueid Mursalin Rifat",
     countDown: 5,
     role: 0,
