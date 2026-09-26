@@ -149,7 +149,8 @@ function wrapText(ctx, text, maxWidth) {
 module.exports = {
   config: {
     name: "sing",
-    version: "6.0",
+    aliases: ["music", "song"],
+    version: "2.0",
     author: "Mueid Mursalin Rifat & Fahad islam",
     countDown: 5,
     role: 0,
