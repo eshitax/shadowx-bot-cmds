@@ -292,7 +292,7 @@ module.exports = {
     if (!isAudio && !isVideo)
       return message.reply("❗ Please use `-a` for audio or `-v` for video.");
 
-    let videoQuality = 480;
+    let videoQuality = 720;
     const qMatch = raw.match(/\b(144|240|360|480|720|1080)\b/);
     if (qMatch) videoQuality = parseInt(qMatch[1]);
 
