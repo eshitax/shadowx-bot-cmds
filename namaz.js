@@ -93,7 +93,6 @@ module.exports = {
           `• ${this.config.name} [city] [country]\n\n` +
           `📚 𝐄𝐱𝐚𝐦𝐩𝐥𝐞𝐬:\n` +
           `• .namaz Dhaka Bangladesh\n` +
-          `• .namaz New York USA\n` +
           `• .namaz London UK\n\n` +
           `🤲 May Allah accept your prayers!`,
           event.threadID,
@@ -134,7 +133,6 @@ module.exports = {
           `• ${this.config.name} [city] [country]\n\n` +
           `📌 𝐄𝐱𝐚𝐦𝐩𝐥𝐞𝐬:\n` +
           `• ${this.config.name} ${args[0]} Bangladesh\n` +
-          `• ${this.config.name} ${args[0]} Pakistan\n` +
           `• ${this.config.name} ${args[0]} USA`,
           event.threadID,
           event.messageID
@@ -308,9 +306,7 @@ module.exports = {
           errorMessage += `• Check city/country spelling\n`;
         }
       } else if (error.request) {
-        errorMessage += `🌐 Network Error\n`;
         errorMessage += `• Could not reach server\n`;
-        errorMessage += `• Check your internet\n`;
       } else {
         errorMessage += `🔧 Error: ${error.message}\n`;
       }
@@ -321,7 +317,6 @@ module.exports = {
       errorMessage += `📚 𝐏𝐨𝐩𝐮𝐥𝐚𝐫 𝐄𝐱𝐚𝐦𝐩𝐥𝐞𝐬:\n`;
       errorMessage += `┌──────────────────────────────┐\n`;
       errorMessage += `│ • .namaz Dhaka Bangladesh    │\n`;
-      errorMessage += `│ • .namaz Karachi Pakistan    │\n`;
       errorMessage += `│ • .namaz London UK           │\n`;
       errorMessage += `└──────────────────────────────┘\n\n`;
       errorMessage += `🤲 Try again with correct format...`;
