@@ -80,7 +80,7 @@ async function checkURL(url) {
 module.exports = {
   config: {
     name: "uptimer",
-    aliases: ["uptime", "monitor"],
+    aliases: ["monitor"],
     version: "3.0",
     author: "Mueid Mursalin Rifat",
     role: 0,
